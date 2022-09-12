@@ -32,8 +32,8 @@ set(UIS
 find_package(Qt4 4.7)
 if(QT_FOUND)
 	include(${QT_USE_FILE})
-	qt4_wrap_ui(GENERATED_SOURCES ${UIS})
-	qt4_wrap_cpp(GENERATED_SOURCES ${MOCS})
+	qt5_wrap_ui(GENERATED_SOURCES ${UIS})
+	qt5_wrap_cpp(GENERATED_SOURCES ${MOCS})
 
 	source_group("Generated Sources - Do Not Edit"
 		FILES

@@ -39,7 +39,7 @@ set(QT_HEADER vrpn_Qt.h)
 set(QT_SRC vrpn_Qt.C)
 
 # Do moc stuff
-qt4_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
+qt5_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
 
 
 #######################################

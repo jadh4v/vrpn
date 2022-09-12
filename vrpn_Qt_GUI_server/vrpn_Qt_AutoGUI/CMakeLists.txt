@@ -18,7 +18,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}
 
 # Do moc stuff
 set(QT_MOC_SRC)
-qt4_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
+qt5_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
 add_definitions(-DQT_GUI_LIBS -DQT_CORE_LIB -DQT3_SUPPORT)
 
 

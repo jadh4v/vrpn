@@ -20,8 +20,8 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}
 # Do moc stuff
 set(QT_UI_HEADER)
 set(QT_MOC_SRC)
-qt4_wrap_ui(QT_UI_HEADER ${QT_UI})
-qt4_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
+qt5_wrap_ui(QT_UI_HEADER ${QT_UI})
+qt5_wrap_cpp(QT_MOC_SRC ${QT_HEADER})
 set_source_files_properties(${QT_SRC}
 	PROPERTIES
 	OBJECT_DEPENDS
